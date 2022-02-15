@@ -1,5 +1,10 @@
-let arr = [1, 2, 3, 4, 5, 6, 7];
-for (let i=0; i<7; ++i)
+let arr = [];
+const size = 100;
+for (let i=0; i<size; i++)
+{
+	arr[i] = Math.floor(Math.random()*10);
+} 
+for (let i=0; i<arr.length; ++i)
 	{
 	console.log (arr[i]);
 	}
