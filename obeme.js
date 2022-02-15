@@ -1,18 +1,37 @@
 let arr = [];
-function create ()
+
+function create () {
+
+let size = parseInt(document.getElementById('len').value);
+
+for (let i=0; i<size; i++) {
+	
+	arr[i] = Math.floor(Math.random()*10);
+}
+print ()
+} 
+
+function zero ()
 {
 let size = parseInt(document.getElementById('len').value);
 
 for (let i=0; i<size; i++)
 {
-	arr[i] = Math.floor(Math.random()*10);
+	arr[i] = 0;
 } 
-let div =document.getElementById('massiv')
-for (let i=0; i<arr.length; ++i)
-	{
+print ()
+}
+
+
+function print(){
+	let div =document.getElementById('massiv')
+div.innerHTML = ' '
+for (let i=0; i<arr.length; ++i) {
+	
 	div.innerHTML += arr[i] + ', ';
 	}
 }
+
 /*console.log (arr[0]);
 
 console.log (arr[1]);
