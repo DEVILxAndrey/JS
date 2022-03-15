@@ -1,19 +1,20 @@
 $(document).ready(function(){
 
-   $("#drag1").draggable({stack:"#drop1"});
-   $("#drag2").draggable({stack:"#drop1",revert:true});
-   $("#drop1").droppable({
-      accept:"#drag1",
-      over:function(){
-         $("#drag1").css("background-color","#d7fa99");
-         $("#drop1").css("background-color","#d7fa99");
-      },
-      drop:function(){
-         $("#drag1").css("display","none");
-         $("#drop1").css("background-color","#c4f66f");
-         $("#drop1").html("Перемещение завершено успешно.");
-      }
-   });
-   $("#resize1").resizable();
+   $("#sort1,#sort2").sortable({connectWith:".connect"});
 
 }); 
+    $("#el1").draggable({stack:"#el1"}); 
+    $("#el1").resizable();
+    $("#sort1").sortable();
+    $("#el2,#el3").draggable({stack:"#el2,el3"});
+    $("#drop1,#drop2,#el3");
+    $("#drop1").html("Андрей");
+    $("#drop2").html("Твердохлеб")
+
+	over:function(){
+         $("#warp1").css("background-color","#d7fa99");
+         $("#drop1").css("background-color","#d7fa99");
+      }
+
+
+ 
